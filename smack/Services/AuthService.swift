@@ -105,5 +105,70 @@ class AuthService {
         }
     }
     
+    func createUser(name: String, email: String, avatarName: String, avatarColor: String, completion: @escaping CompletionHandler ) {
+        
+        
+        var nameValue: String?
+        var emailValue: String?
+        var idValue: String?
+        var colorValue: String?
+        var avatarNameValue: String?
+        
+        
+        let lowerCaseEmail = email.lowercased()
+        
+        let body: [String: Any] = [
+            "name": name,
+            "email": lowerCaseEmail,
+            "avatarName": avatarName,
+            "avatarColor": avatarColor
+        ]
+        
+        let header = [
+            "Authorization": "Bearer \(AuthService.instance.authToken)",
+            "Content-Type": "application/json; charset=utf-8"
+        ]
+        
+        Alamofire.request(URL_USER_ADD, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
+            
+            if response.result.error == nil{
+                
+                if let json = response.result.value as? Dictionary<String,Any> {
+                    if let id = json["_id"] as? String {
+                        idValue = id
+                    }
+                    if let color = json["avatarColor"] as? String {
+                        colorValue = color
+                    }
+                    if let avatarName = json["avatarName"] as? String {
+                        avatarNameValue = avatarName
+                    }
+                    if let email = json["email"] as? String {
+                        emailValue = email
+                    }
+                    if let name = json["name"] as? String {
+                        nameValue = name
+                    }
+                    
+                    
+                }
+                
+                UserDataService.instance.setUserData(id: idValue!, color: colorValue!, avatarName: avatarNameValue!, email: emailValue!, name: nameValue!)
+                completion(true)
+            }else {
+                completion(false)
+                debugPrint(response.result.error as Any)
+            }
+            
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    
     
 }
