@@ -86,7 +86,7 @@ class AuthService {
 //                self.userEmail = json["user"].stringValue
 //                self.authToken = json["token"].stringValue
                 
-//            Using regular Swiftå
+//            Using regular Swift
             if let json = response.result.value as? Dictionary<String,Any> {
                 if let email = json["user"] as? String {
                     self.userEmail = email
