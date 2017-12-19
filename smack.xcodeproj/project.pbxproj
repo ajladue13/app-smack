@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D90D236C065DB8EE1F29FAB /* Pods_smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E58E17671CD2C0A007110C4 /* Pods_smack.framework */; };
+		1418E1171FE8B19300387C9D /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1418E1161FE8B19300387C9D /* CircleImage.swift */; };
 		141ABE281FD49CEC00197CEA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141ABE271FD49CEC00197CEA /* AuthService.swift */; };
 		141ABE2A1FD4A9DE00197CEA /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141ABE291FD4A9DE00197CEA /* RoundedButton.swift */; };
 		146CB1AB1FBE95410040765D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CB1AA1FBE95410040765D /* AppDelegate.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1418E1161FE8B19300387C9D /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		141ABE271FD49CEC00197CEA /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		141ABE291FD4A9DE00197CEA /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		1462EFF6BBB28DA9A35234FB /* Pods-smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-smack/Pods-smack.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				14AAE2221FCBADAD000F6EC6 /* GradientView.swift */,
 				141ABE291FD4A9DE00197CEA /* RoundedButton.swift */,
 				14B7BEF21FD8FB26002AE28F /* AvatarCell.swift */,
+				1418E1161FE8B19300387C9D /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				14AAE21F1FCBA42C000F6EC6 /* ChannelVC.swift in Sources */,
 				14B7BEF11FD8F815002AE28F /* AvatarPickerVC.swift in Sources */,
 				141ABE2A1FD4A9DE00197CEA /* RoundedButton.swift in Sources */,
+				1418E1171FE8B19300387C9D /* CircleImage.swift in Sources */,
 				14AAE21D1FCBA415000F6EC6 /* ChatVC.swift in Sources */,
 				1480D1231FD77C8E006F10C8 /* UserDataService.swift in Sources */,
 				146ED5A11FCE4DA6003B40B5 /* CreateAccountVC.swift in Sources */,
