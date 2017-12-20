@@ -177,6 +177,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="OHh-V9-CJ4" id="RZW-hh-KHh"/>
+                        <outlet property="userImg" destination="vBV-Ei-d6a" id="J8J-zr-eBc"/>
                         <segue destination="WLn-QO-Z4T" kind="show" identifier="toLogin" id="cjL-1I-y2i"/>
                     </connections>
                 </viewController>
@@ -447,12 +448,13 @@
                                 </connections>
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Ahu-fL-HSp">
-                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <rect key="frame" x="169" y="552" width="37" height="37"/>
                                 <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="BhT-Im-l7u" firstAttribute="top" secondItem="Ahu-fL-HSp" secondAttribute="bottom" constant="8" id="1Gh-C4-qev"/>
                             <constraint firstItem="p7X-wT-viW" firstAttribute="centerX" secondItem="P7W-pi-dr7" secondAttribute="centerX" id="4EN-ei-PHF"/>
                             <constraint firstItem="p7X-wT-viW" firstAttribute="top" secondItem="XOd-aj-aTH" secondAttribute="bottom" constant="40" id="5qd-0m-R8c"/>
                             <constraint firstItem="oQ5-Yh-5lN" firstAttribute="top" secondItem="6Ob-eE-dAF" secondAttribute="top" id="72b-0m-mzd"/>
@@ -462,7 +464,6 @@
                             <constraint firstItem="BhT-Im-l7u" firstAttribute="centerX" secondItem="P7W-pi-dr7" secondAttribute="centerX" id="Y9K-mL-KYR"/>
                             <constraint firstItem="vSz-ky-IYL" firstAttribute="top" secondItem="oQ5-Yh-5lN" secondAttribute="bottom" constant="10" id="YTL-Er-aOq"/>
                             <constraint firstItem="GaV-Wx-HEP" firstAttribute="top" secondItem="TzY-5q-M3x" secondAttribute="top" id="e8i-JP-62F"/>
-                            <constraint firstItem="Ahu-fL-HSp" firstAttribute="centerY" secondItem="P7W-pi-dr7" secondAttribute="centerY" constant="-100" id="jjl-7B-TG4"/>
                             <constraint firstItem="vSz-ky-IYL" firstAttribute="centerX" secondItem="P7W-pi-dr7" secondAttribute="centerX" id="njc-nC-Sba"/>
                             <constraint firstItem="Ahu-fL-HSp" firstAttribute="centerX" secondItem="P7W-pi-dr7" secondAttribute="centerX" id="ort-vO-TlI"/>
                             <constraint firstItem="oQ5-Yh-5lN" firstAttribute="width" secondItem="6Ob-eE-dAF" secondAttribute="width" id="s4T-8e-u4o"/>
